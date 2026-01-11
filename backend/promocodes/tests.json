@@ -1,0 +1,23 @@
+{
+  "tests": [
+    {
+      "name": "Create promocode",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "action": "create",
+        "code": "TESTPROMO2024",
+        "bonus_money": 10000,
+        "max_uses": 100
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "promocode": {
+          "code": "string"
+        }
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

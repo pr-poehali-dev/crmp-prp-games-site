@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "Get online players",
+      "method": "GET",
+      "path": "/?user_id=",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "online_players": "array",
+        "total_online": "number"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Get all clans",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "clans": "array"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
