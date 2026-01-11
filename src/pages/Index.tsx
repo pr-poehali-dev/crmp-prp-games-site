@@ -26,12 +26,12 @@ const Index = () => {
   const { toast } = useToast();
 
   const [inventory, setInventory] = useState<InventoryItem[]>([
-    { id: 1, name: 'Плазменный меч', type: 'weapon', rarity: 'legendary', level: 50, damage: 250 },
-    { id: 2, name: 'Нано-броня', type: 'gear', rarity: 'epic', level: 45, defense: 180 },
-    { id: 3, name: 'Кристалл силы', type: 'artifact', rarity: 'rare', level: 30 },
-    { id: 4, name: 'Энергетический щит', type: 'gear', rarity: 'legendary', level: 48, defense: 220 },
-    { id: 5, name: 'Огненный топор', type: 'weapon', rarity: 'epic', level: 42, damage: 190 },
-    { id: 6, name: 'Амулет удачи', type: 'artifact', rarity: 'rare', level: 25 },
+    { id: 1, name: 'AK-47', type: 'weapon', rarity: 'legendary', level: 50, damage: 250 },
+    { id: 2, name: 'Бронежилет', type: 'gear', rarity: 'epic', level: 45, defense: 180 },
+    { id: 3, name: 'Золотая цепь', type: 'artifact', rarity: 'rare', level: 30 },
+    { id: 4, name: 'Desert Eagle', type: 'weapon', rarity: 'legendary', level: 48, damage: 220 },
+    { id: 5, name: 'Бита', type: 'weapon', rarity: 'common', level: 5, damage: 30 },
+    { id: 6, name: 'Аптечка', type: 'item', rarity: 'common', level: 1 },
   ]);
 
   useEffect(() => {
@@ -94,25 +94,25 @@ const Index = () => {
   };
 
   const servers = [
-    { name: 'Сервер Альфа', players: 487, maxPlayers: 500, status: 'online', ping: 15 },
-    { name: 'Сервер Бета', players: 392, maxPlayers: 500, status: 'online', ping: 22 },
-    { name: 'Сервер Гамма', players: 156, maxPlayers: 300, status: 'online', ping: 18 },
-    { name: 'Сервер Дельта', players: 0, maxPlayers: 500, status: 'maintenance', ping: 0 },
+    { name: 'Москва | RolePlay', players: 487, maxPlayers: 500, status: 'online', ping: 15 },
+    { name: 'Санкт-Петербург | RolePlay', players: 392, maxPlayers: 500, status: 'online', ping: 22 },
+    { name: 'Краснодар | RolePlay', players: 156, maxPlayers: 300, status: 'online', ping: 18 },
+    { name: 'Новосибирск | RolePlay', players: 0, maxPlayers: 500, status: 'maintenance', ping: 0 },
   ];
 
   const topPlayers = [
-    { rank: 1, name: 'CyberKnight', level: 89, points: 15420 },
-    { rank: 2, name: 'NeonWarrior', level: 87, points: 14850 },
-    { rank: 3, name: 'QuantumHero', level: 85, points: 14100 },
-    { rank: 4, name: 'PlasmaGamer', level: 83, points: 13560 },
-    { rank: 5, name: 'VoidMaster', level: 82, points: 13200 },
+    { rank: 1, name: 'Pakhan_Sergey', level: 89, points: 15420 },
+    { rank: 2, name: 'Vor_Vladimir', level: 87, points: 14850 },
+    { rank: 3, name: 'Bratva_Boss', level: 85, points: 14100 },
+    { rank: 4, name: 'Bandit_Alexey', level: 83, points: 13560 },
+    { rank: 5, name: 'Avtoritet_Ivan', level: 82, points: 13200 },
   ];
 
   const clans = [
-    { name: 'Киберпанки', members: 145, level: 25, logo: '⚡' },
-    { name: 'Неоновые Воины', members: 132, level: 23, logo: '🔥' },
-    { name: 'Цифровые Легенды', members: 118, level: 22, logo: '💎' },
-    { name: 'Плазменный Альянс', members: 95, level: 20, logo: '⚔️' },
+    { name: 'Кавказская Мафия', members: 145, level: 25, logo: '🔫' },
+    { name: 'Братва 90-х', members: 132, level: 23, logo: '🚗' },
+    { name: 'Черные Волки', members: 118, level: 22, logo: '🐺' },
+    { name: 'Сибирские Львы', members: 95, level: 20, logo: '🦁' },
   ];
 
   const gallery = [

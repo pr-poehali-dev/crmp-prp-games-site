@@ -40,10 +40,10 @@ export const ProfileSection = ({ activeSection, inventory, getRarityColor }: Pro
               <CardHeader>
                 <div className="flex flex-col items-center gap-4">
                   <Avatar className="w-24 h-24">
-                    <AvatarFallback className="text-2xl">CK</AvatarFallback>
+                    <AvatarFallback className="text-2xl">PS</AvatarFallback>
                   </Avatar>
                   <div className="text-center">
-                    <h3 className="text-xl font-bold">CyberKnight</h3>
+                    <h3 className="text-xl font-bold">Pakhan_Sergey</h3>
                     <Badge className="mt-2">Уровень 89</Badge>
                   </div>
                 </div>

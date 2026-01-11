@@ -31,14 +31,14 @@ export const ContentSections = ({ activeSection, gallery, servers, topPlayers, c
                 Добро пожаловать в PRP GAMES
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Погрузитесь в мир киберпанка и приключений. Создавайте кланы, сражайтесь с врагами и становитесь легендой!
+                Погрузитесь в мир криминальной России. Стройте бизнес, вступайте в банды и становитесь авторитетом!
               </p>
               <div className="flex gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover-glow text-lg px-8">
-                  Начать играть
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                  Скачать лаунчер
                 </Button>
                 <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-lg px-8">
-                  Узнать больше
+                  Правила сервера
                 </Button>
               </div>
             </div>
@@ -51,7 +51,7 @@ export const ContentSections = ({ activeSection, gallery, servers, topPlayers, c
                   <Icon name="Users" className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle>1000+ Игроков</CardTitle>
-                <CardDescription>Активное игровое сообщество онлайн 24/7</CardDescription>
+                <CardDescription>Активное комьюнити онлайн круглосуточно</CardDescription>
               </CardHeader>
             </Card>
 
@@ -60,8 +60,8 @@ export const ContentSections = ({ activeSection, gallery, servers, topPlayers, c
                 <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon name="Sword" className="h-6 w-6 text-secondary" />
                 </div>
-                <CardTitle>Эпические сражения</CardTitle>
-                <CardDescription>PvP и PvE режимы с уникальной системой боя</CardDescription>
+                <CardTitle>Криминальные разборки</CardTitle>
+                <CardDescription>Захват территорий, войны банд и уличные гонки</CardDescription>
               </CardHeader>
             </Card>
 
@@ -70,8 +70,8 @@ export const ContentSections = ({ activeSection, gallery, servers, topPlayers, c
                 <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon name="Trophy" className="h-6 w-6 text-accent" />
                 </div>
-                <CardTitle>Турниры и награды</CardTitle>
-                <CardDescription>Еженедельные турниры с призовым фондом</CardDescription>
+                <CardTitle>Реалистичная экономика</CardTitle>
+                <CardDescription>Заработок, бизнес и нелегальные схемы обогащения</CardDescription>
               </CardHeader>
             </Card>
           </section>
@@ -84,40 +84,40 @@ export const ContentSections = ({ activeSection, gallery, servers, topPlayers, c
           <Card>
             <CardContent className="pt-6 space-y-4">
               <p className="text-lg">
-                PRP GAMES — это уникальный киберпанк RPG проект, где каждый игрок может стать легендой. 
-                Создавайте своего персонажа, прокачивайте навыки, собирайте легендарное снаряжение и объединяйтесь в кланы.
+                PRP GAMES — это российский CRMP проект с уникальной ролевой системой. 
+                Создавайте своего персонажа, устраивайтесь на работу, открывайте бизнес или вступайте в преступные группировки.
               </p>
               <p className="text-lg">
-                В нашем мире вас ждут захватывающие сюжетные миссии, динамичные PvP сражения, 
-                сложные рейды на боссов и постоянно обновляемый контент.
+                В нашем мире действуют реалистичные законы: работайте в полиции, медицине, армии, или выбирайте криминальный путь.
+                Покупайте дома, машины, оружие. Участвуйте в войнах банд и захватывайте территории.
               </p>
               <div className="grid md:grid-cols-2 gap-4 pt-4">
                 <div className="flex items-start gap-3">
                   <Icon name="Check" className="h-5 w-5 text-primary mt-1" />
                   <div>
-                    <h4 className="font-semibold mb-1">Система прокачки</h4>
-                    <p className="text-sm text-muted-foreground">100+ уровней и уникальных навыков</p>
+                    <h4 className="font-semibold mb-1">Система уровней</h4>
+                    <p className="text-sm text-muted-foreground">Прокачка персонажа и профессий</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Check" className="h-5 w-5 text-primary mt-1" />
                   <div>
-                    <h4 className="font-semibold mb-1">Кастомизация</h4>
-                    <p className="text-sm text-muted-foreground">Тысячи вариантов персонализации</p>
+                    <h4 className="font-semibold mb-1">Реалистичная РП</h4>
+                    <p className="text-sm text-muted-foreground">Строгие правила и адекватная администрация</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Check" className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Экономика</h4>
-                    <p className="text-sm text-muted-foreground">Торговля, крафт и аукцион</p>
+                    <p className="text-sm text-muted-foreground">Работа, бизнес, банковская система</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Check" className="h-5 w-5 text-primary mt-1" />
                   <div>
-                    <h4 className="font-semibold mb-1">Обновления</h4>
-                    <p className="text-sm text-muted-foreground">Новый контент каждую неделю</p>
+                    <h4 className="font-semibold mb-1">Транспорт</h4>
+                    <p className="text-sm text-muted-foreground">Более 200 автомобилей и мотоциклов</p>
                   </div>
                 </div>
               </div>
@@ -152,7 +152,7 @@ export const ContentSections = ({ activeSection, gallery, servers, topPlayers, c
                         <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse-glow" />
                         <span className="text-muted-foreground">Пинг: {server.ping}ms</span>
                       </div>
-                      <Button size="sm" className="bg-gradient-to-r from-primary to-secondary">
+                      <Button size="sm" className="bg-primary hover:bg-primary/90">
                         Подключиться
                       </Button>
                     </div>

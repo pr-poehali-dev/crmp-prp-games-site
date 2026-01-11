@@ -55,12 +55,12 @@ export const ShopSections = ({
 
           <div className="grid md:grid-cols-3 gap-4">
             {[
-              { id: 1, name: 'Стартовый пакет', price: 299, description: '100 кристаллов, уникальный скин, VIP чат' },
-              { id: 2, name: 'Продвинутый пакет', price: 799, description: '500 кристаллов, 3 эпических скина, приоритет в очереди', featured: true },
-              { id: 3, name: 'Легендарный пакет', price: 1999, description: '2000 кристаллов, 10 легендарных скинов, личный саппорт' },
-              { id: 4, name: 'VIP статус (30 дней)', price: 399, description: 'Приоритет в очереди, уникальный цвет ника, +50% к опыту' },
+              { id: 1, name: 'Стартовый пакет', price: 299, description: '500,000$, стартовая машина, VIP чат' },
+              { id: 2, name: 'Продвинутый пакет', price: 799, description: '2,000,000$, дом, авто, приоритет в очереди', featured: true },
+              { id: 3, name: 'Премиум пакет', price: 1999, description: '10,000,000$, элитный дом, люксовое авто, личный саппорт' },
+              { id: 4, name: 'VIP статус (30 дней)', price: 399, description: 'Приоритет входа, цветной ник, +50% к зарплате' },
               { id: 5, name: 'Смена ника', price: 199, description: 'Измените игровой никнейм один раз' },
-              { id: 6, name: 'Легендарное оружие', price: 499, description: 'Плазменный меч с уроном 250 единиц' },
+              { id: 6, name: 'Desert Eagle', price: 499, description: 'Легендарный пистолет с золотым покрытием' },
             ].map((item) => (
               <Card key={item.id} className={`hover-glow ${item.featured ? 'border-primary card-glow' : ''}`}>
                 <CardHeader>
@@ -70,7 +70,7 @@ export const ShopSections = ({
                 <CardContent className="space-y-3">
                   <p className="text-sm text-muted-foreground">{item.description}</p>
                   <Button 
-                    className="w-full bg-gradient-to-r from-primary to-secondary"
+                    className="w-full bg-primary hover:bg-primary/90"
                     onClick={() => addToCart(item.id)}
                     disabled={cart.includes(item.id)}
                   >
@@ -101,10 +101,10 @@ export const ShopSections = ({
                   const items = [
                     { id: 1, name: 'Стартовый пакет', price: 299 },
                     { id: 2, name: 'Продвинутый пакет', price: 799 },
-                    { id: 3, name: 'Легендарный пакет', price: 1999 },
+                    { id: 3, name: 'Премиум пакет', price: 1999 },
                     { id: 4, name: 'VIP статус (30 дней)', price: 399 },
-                    { id: 5, name: 'Смена ники', price: 199 },
-                    { id: 6, name: 'Легендарное оружие', price: 499 },
+                    { id: 5, name: 'Смена ника', price: 199 },
+                    { id: 6, name: 'Desert Eagle', price: 499 },
                   ];
                   const item = items.find(i => i.id === itemId);
                   if (!item) return null;
@@ -135,7 +135,7 @@ export const ShopSections = ({
                       }, 0)} ₽
                     </span>
                   </div>
-                  <Button className="w-full bg-gradient-to-r from-primary to-secondary" size="lg">
+                  <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
                     Перейти к оплате
                   </Button>
                 </CardContent>

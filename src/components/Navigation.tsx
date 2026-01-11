@@ -16,7 +16,7 @@ export const Navigation = ({ activeSection, setActiveSection, user, setAuthModal
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="text-2xl font-bold text-glow bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <div className="text-2xl font-bold text-primary">
               PRP GAMES
             </div>
           </div>
@@ -56,7 +56,7 @@ export const Navigation = ({ activeSection, setActiveSection, user, setAuthModal
                 </Button>
               </>
             ) : (
-              <Button onClick={() => setAuthModalOpen(true)} className="bg-gradient-to-r from-primary to-secondary hover-glow">
+              <Button onClick={() => setAuthModalOpen(true)} className="bg-primary hover:bg-primary/90">
                 <Icon name="LogIn" className="mr-2 h-4 w-4" />
                 Войти
               </Button>
